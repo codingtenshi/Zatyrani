@@ -1,4 +1,4 @@
-from MeetingClass import Meeting
+from Z.Meeting import Meeting
 
 
 class Initiatives(Meeting):
@@ -7,11 +7,5 @@ class Initiatives(Meeting):
         self.description = description  # opis inicjatywy
         self.hour = hour  # godzina inicjatywy
 
-    def get_description(self):
-        return self.description
-
-    def get_hour(self):
-        return self.hour
-
-    def initiative_full_description(self):
+    def get_full_description(self):
         return f"{self.name} {self.description} held on {self.day} at {self.hour}"
