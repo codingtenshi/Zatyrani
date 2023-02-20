@@ -9,12 +9,6 @@ class Zatyrani:  # zakładam, że obiekt zatyrany ma wymagane imię i skąd jest
         self.competition = []
         self.initiative = []
 
-    def add_description(self, description):
-        self.description = description
-
-    def add_since_when(self, since_when):
-        self.since_when = since_when
-
     def add_competition(self, c):
         self.competition.append(c)
 
