@@ -1,6 +1,7 @@
 from Z.ZatyraniClass import Zatyrani
 from CompetitionClass import Competition
 from InitiativesClass import Initiatives
+from News import News
 
 
 zatyrany = Zatyrani("Lukasz", "Nieborowice")
@@ -23,16 +24,20 @@ print(competition1.get_name())  # obiekt i funkcja, która jest w obiekcie
 print(competition1.get_full_description())
 zatyrany.list_competition()
 print('===initiatives===')
-initiative1 = Initiatives("Slow running -", "running for everyone", "Tuesday", "7.00 p.m", 'zasupie')
-initiative2 = Initiatives("Regular running -", "the fastest rate not for beginners", "Thursday", "7.30 p.m.", 'zasupie')
-initiative3 = Initiatives("Nordic Walking -", "meeting for everyone who likes walking with sticks", "Monday", "6.30 p.m", 'zasupie')
-initiative4 = Initiatives("Winter swimming -", "body charting", "Sunday", "12.00 a.m", 'zasupie')
-initiative5 = Initiatives("Charity relay -", "helping by running", "June", "to determine", 'zasupie')
-initiative6 = Initiatives("Training the youngest -", "exercises for children", "Friday", "16.00 p.m.", 'zasupie')
+initiative1 = Initiatives("Slow running -", "running for everyone", "Tuesday", "7.00 p.m", 'zadupie')
+initiative2 = Initiatives("Regular running -", "the fastest rate not for beginners", "Thursday", "7.30 p.m.", 'zadupie')
+initiative3 = Initiatives("Nordic Walking -", "meeting for everyone who likes walking with sticks", "Monday", "6.30 p.m", 'zadupie')
+initiative4 = Initiatives("Winter swimming -", "body charting", "Sunday", "12.00 a.m", 'zadupie')
+initiative5 = Initiatives("Charity relay -", "helping by running", "June", "to determine", 'zadupie')
+initiative6 = Initiatives("Training the youngest -", "exercises for children", "Friday", "16.00 p.m.", 'zadupie')
 print(initiative1.get_name())
 print(initiative1.initiative_full_description())
 
 zatyrany.add_initiative(initiative1)
 zatyrany.add_initiative(initiative6)
 zatyrany.list_initiatives()
+
+print("======News=====")
+news = News("14.02.2023", "Weekend with heart")
+print(news.full_description())
 
