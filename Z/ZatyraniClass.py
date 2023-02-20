@@ -26,17 +26,15 @@ class Zatyrani:  # zakładam, że obiekt zatyrany ma wymagane imię i skąd jest
                         f'in {c.get_date()}'
             print(c_desc)
 
-
     def add_initiative(self, i):  # dodałam to po to, aby w obiekcie zatyrany można była dodać inicjatywy
         self.initiative.append(i)
 
-
     def list_initiatives(self):
         for i in self.initiative:
-            i_desc = f'{self.name} is the organizer of the event ' \
-                        f' {i.get_name()} ' \
-                        f'running for everyone {i.get_description()}' \
-                        f'held on {i.get_day()} ' \
+            i_desc = f'{self.name} is the organizer of the event' \
+                        f' {i.get_name()}' \
+                        f' {i.get_description()}' \
+                        f' held on {i.get_day()} ' \
                         f'at {i.get_hour()} '
             print(i_desc)
 
