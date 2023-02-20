@@ -1,7 +1,9 @@
-class Competition:
+from Z.Meeting import Meeting
+
+
+class Competition(Meeting):
     def __init__(self, name, location, date):
-        self.name = name
-        self.location = location
+        super().__init__(name, location)
         self.date = date
 
     def get_full_description(self):
