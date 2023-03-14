@@ -6,11 +6,11 @@
 
 def get_positive_number(nb):
     if nb == 0:
-        return False
+        return "Zero"
     elif nb > 0:
-        return True
+        return "Positive"
     else:
-        return False
+        return "Negative"
 
 
 result = get_positive_number(5)
