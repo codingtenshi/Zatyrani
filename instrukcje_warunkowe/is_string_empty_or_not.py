@@ -4,9 +4,9 @@
 
 def get_empty_string(string):
     if len(string) == 0:
-        return ""
+        return "Empty"
     else:
-        return False
+        return "Not empty"
 
 
 result = get_empty_string("")
