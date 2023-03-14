@@ -6,7 +6,7 @@ def is_palindrome(a):
     if a == a[:: -1]:
         return "Palindrome"
     else:
-        return False
+        return "Not palindrome"
 
 
 
