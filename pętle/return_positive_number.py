@@ -1,18 +1,19 @@
-#  write a program that checks whether a number in a list is positive,
-#  negative or zero
-# input: [5, 6, 8, 0, -4, -3]
-# expected output: Positive
+#  write a program that checks whether a number in a list is positive
+#  input [5, 6, 8, 0, -4, -3]
+# expected output: [5, 6, 8]
 
 
 lst = [5, 6, 8, 0, -4, -3]
-result = []
 
 
 def get_positive_number(nbs):
+    result = []
     for n in nbs:
         if n > 0:
             result.append(n)
     return result
 
 
-print(get_positive_number([5, 6, 8, 0, -4, -3]))
+
+
+
